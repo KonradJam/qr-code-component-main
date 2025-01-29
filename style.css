@@ -5,5 +5,45 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit", serif;
+    padding: 1.5em;
+}
+
+.qr-component {
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.qr-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.qr-body {
+    padding: 1.5em .5em;
+    text-align: center;
+}
+
+.qr-title {
+    font-size: 1.4em;
+    color: hsl(218, 44%, 22%);
+}
+
+.qr-text {
+    margin-top: 1em;
+    color: hsl(216, 15%, 48%);
+}
+
+@media (min-width: 360px) {
+    .qr-component {
+        width: calc(360px - 3em);
+    }
 }
